@@ -11,5 +11,3 @@ def text_to_whitespace(text):
 		f.write("\n") #signify the end of the binary number
 		f.write("\t\n  ") #Go to the Input/Output Instruction Modification Parameter, then simply output the character at the top of the stack
 	f.write("\n"*3) #end of program
-
-text_to_whitespace("Gareth good job the coordinates are ahahaha")
