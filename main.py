@@ -2,6 +2,7 @@ import os
 
 from ReverseCompilers.text_to_puberty import text_to_puberty
 from ReverseCompilers.text_to_whitespace import text_to_whitespace
+from ReverseCompilers.text_to_brainfuck import text_to_brainfuck
 
 exec_list = []
 
