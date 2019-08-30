@@ -4,11 +4,13 @@ from ReverseCompilers.text_to_puberty import text_to_puberty
 from ReverseCompilers.text_to_whitespace import text_to_whitespace
 from ReverseCompilers.text_to_brainfuck import text_to_brainfuck
 from ReverseCompilers.text_to_lolcode import text_to_lolcode
+from ReverseCompilers.text_to_pikachu import text_to_pikachu
 
 file_extensions = {"brainfuck": ".txt",
 		   "puberty": ".fap",
 		   "whitespace": ".txt",
-		   "lolcode": ".lol"}
+		   "lolcode": ".lol",
+		   "pikachu": ".txt"}
 
 exec_list = []
 
