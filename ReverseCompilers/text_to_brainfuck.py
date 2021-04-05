@@ -1,6 +1,6 @@
 def text_to_brainfuck():
 	text = input("Text: ")
-	f = open("outputFiles/brainfuck.txt", "w+")
+	f = open("outputFiles/brainfuck.bf", "w+")
 	for letter in text:
 		for i in range(ord(letter)):
 			f.write("+")

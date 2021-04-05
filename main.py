@@ -6,7 +6,7 @@ from ReverseCompilers.text_to_brainfuck import text_to_brainfuck
 from ReverseCompilers.text_to_lolcode import text_to_lolcode
 from ReverseCompilers.text_to_pikachu import text_to_pikachu
 
-file_extensions = {"brainfuck": ".txt",
+file_extensions = {"brainfuck": ".bf",
 		   "puberty": ".fap",
 		   "whitespace": ".txt",
 		   "lolcode": ".lol",
