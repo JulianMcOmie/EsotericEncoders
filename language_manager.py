@@ -1,20 +1,22 @@
+from encoders.brainfuck import BrainfuckEncoder
+from encoders.whitespace import WhitespaceEncoder
+from encoders.lolcode import LolcodeEncoder
+from encoders.pikachu import PikachuEncoder
+from encoders.puberty import PubertyEncoder
+
+
 class LanguageManager:
-    supported_languages = {
-        "brainfuck": (".bf", "text_to_brainfuck"),
-        "puberty": (".fap", "text_to_puberty"),
-        "whitespace": (".txt", "text_to_whitespace"),
-        "lolcode": (".lol", "text_to_lolcode"),
-        "pikachu": (".txt", "text_to_pikachu")
-    }
+    def __init__(self):
+        self.encoders = {
+            'brainfuck': BrainfuckEncoder(),
+            'whitespace': WhitespaceEncoder(),
+            'lolcode': LolcodeEncoder(),
+            'pikachu': PikachuEncoder(),
+            'puberty': PubertyEncoder(),
+        }
 
-    @staticmethod
-    def get_languages():
-        return list(LanguageManager.supported_languages.keys())
+    def get_encoder(self, name):
+        return self.encoders.get(name, None)
 
-    @staticmethod
-    def get_extension(language):
-        return LanguageManager.supported_languages[language][0]
-
-    @staticmethod
-    def get_function(language):
-        return LanguageManager.supported_languages[language][1]
+    def list_encoders(self):
+        return list(self.encoders.keys())

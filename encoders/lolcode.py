@@ -1,4 +1,4 @@
-from encoder import Encoder
+from .encoder import Encoder
 
 
 class LolcodeEncoder(Encoder):
