@@ -1,5 +1,6 @@
 from encoder import Encoder
 
+
 class BrainfuckEncoder(Encoder):
     def encode(self, text):
         encoded_text = ""
